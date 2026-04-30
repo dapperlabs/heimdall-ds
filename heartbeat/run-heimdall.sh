@@ -174,7 +174,20 @@ END=$(date +%s)
 ELAPSED=$((END - START))
 
 # ── Extract cost from JSON output ─────────────────────────────────────────
-COST=$(echo "$RESULT" | python3 -c "import json,sys; d=json.load(sys.stdin); print(round(d.get('cost_usd',0),4))" 2>/dev/null || echo "0")
+COST=$(echo "$RESULT" | python3 -c "
+import json,sys
+text=sys.stdin.read().strip()
+cost=0
+for line in reversed(text.split('\n')):
+    line=line.strip()
+    if not line: continue
+    try:
+        d=json.loads(line)
+        if 'cost_usd' in d and d['cost_usd']:
+            cost=float(d['cost_usd']); break
+    except: pass
+print(round(cost,4))
+" 2>/dev/null || echo "0")
 [[ -z "$COST" || "$COST" == "None" ]] && COST="0"
 update_budget "$COST"
 
