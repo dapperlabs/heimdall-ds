@@ -159,6 +159,7 @@ RESULT=$(timeout "${TIMEOUT}" claude \
     --max-turns "$MAX_TURNS" \
     --max-budget-usd "$BUDGET_USD" \
     --model "$MODEL" \
+    --output-format json \
     -p "$FULL_PROMPT" \
     --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebSearch,WebFetch" \
     2>&1) || {
@@ -172,9 +173,9 @@ RESULT=$(timeout "${TIMEOUT}" claude \
 END=$(date +%s)
 ELAPSED=$((END - START))
 
-# ── Extract cost ──────────────────────────────────────────────────────────
-COST=$(echo "$RESULT" | grep -oP '(?<=cost=\$)[0-9.]+' | tail -1 || echo "0")
-[[ -z "$COST" ]] && COST="0"
+# ── Extract cost from JSON output ─────────────────────────────────────────
+COST=$(echo "$RESULT" | python3 -c "import json,sys; d=json.load(sys.stdin); print(round(d.get('cost_usd',0),4))" 2>/dev/null || echo "0")
+[[ -z "$COST" || "$COST" == "None" ]] && COST="0"
 update_budget "$COST"
 
 log "DONE — elapsed=${ELAPSED}s cost=\$${COST}"
