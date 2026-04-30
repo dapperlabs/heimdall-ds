@@ -17,13 +17,18 @@ Run 3-5 targeted queries checking:
 Do not spend time on things that are normal. Flag things that are not.
 
 ## Output
-Append a timestamped entry to `collect-hq/data-reports/research-log.md`:
-```
-## PULSE — YYYY-MM-DD HH:MM UTC
-[findings or "no anomalies detected — all within normal bands"]
+Write to a daily pulse file — do NOT read or touch `research-log.md`. Use bash to append:
+```bash
+TODAY=$(date -u +%Y-%m-%d)
+mkdir -p collect-hq/data-reports/pulse
+echo "## PULSE — $(date -u +%Y-%m-%d\ %H:%M) UTC" >> collect-hq/data-reports/pulse/${TODAY}.md
+echo "[your findings or 'no anomalies detected — all within normal bands']" >> collect-hq/data-reports/pulse/${TODAY}.md
+echo "" >> collect-hq/data-reports/pulse/${TODAY}.md
 ```
 
-If anything warrants a full finding (anomaly, structural shift), file it as F### in `collect-hq/data-reports/findings/`. Otherwise, log only.
+The pulse directory files stay small (one day per file, fresh each day). Never read research-log.md in pulse mode — it can be hundreds of KB.
+
+If anything warrants a full finding (anomaly, structural shift), file it as F### in `collect-hq/data-reports/findings/`. Otherwise, log to the daily pulse file only.
 
 ## Constraints
-$0.50 budget. 15 turns max. Do not start deep investigations — flag them for the research queue instead.
+$2.00 budget. 25 turns max. Do not start deep investigations — flag them for the research queue instead.

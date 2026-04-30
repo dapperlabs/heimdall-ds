@@ -79,7 +79,7 @@ check_budget
 # ── Mode configuration ────────────────────────────────────────────────────
 case "$MODE" in
     pulse)
-        TIMEOUT=300
+        TIMEOUT=600
         MAX_TURNS=25
         BUDGET_USD=2.00
         MODEL="claude-sonnet-4-6"
