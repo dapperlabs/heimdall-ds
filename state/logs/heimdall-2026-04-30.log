@@ -1,0 +1,100 @@
+2026-04-30T16:00:01Z HEIMDALL [behavioral] SKIPPED — already running (PID 2982759)
+2026-04-30T16:00:02Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$0.50
+2026-04-30T16:03:35Z HEIMDALL [pulse] ERROR — claude exited 1
+Error: Reached max turns (15)
+2026-04-30T16:03:35Z HEIMDALL [pulse] EXIT
+2026-04-30T16:12:01Z HEIMDALL [research] START — mode=research model=claude-opus-4-7 timeout=1800s budget=$4.00
+2026-04-30T16:20:28Z HEIMDALL [research] DONE — elapsed=507s cost=$0
+2026-04-30T16:20:28Z HEIMDALL [research] COMMIT — no changes to collect-hq this cycle
+2026-04-30T16:20:28Z HEIMDALL [research] COMPLETE
+2026-04-30T16:20:28Z HEIMDALL [research] EXIT
+2026-04-30T16:30:02Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$0.50
+2026-04-30T16:33:12Z HEIMDALL [pulse] ERROR — claude exited 1
+Error: Exceeded USD budget (0.5)
+2026-04-30T16:33:12Z HEIMDALL [pulse] EXIT
+2026-04-30T17:00:03Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$0.50
+2026-04-30T17:02:54Z HEIMDALL [pulse] ERROR — claude exited 1
+Error: Exceeded USD budget (0.5)
+2026-04-30T17:02:54Z HEIMDALL [pulse] EXIT
+2026-04-30T17:30:02Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$0.50
+2026-04-30T17:34:31Z HEIMDALL [pulse] ERROR — claude exited 1
+Error: Exceeded USD budget (0.5)
+2026-04-30T17:34:31Z HEIMDALL [pulse] EXIT
+2026-04-30T17:40:02Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$0.50
+2026-04-30T17:41:46Z HEIMDALL [pulse] ERROR — claude exited 1
+{"type":"result","subtype":"error_max_budget_usd","duration_ms":91805,"duration_api_ms":69793,"is_error":true,"num_turns":15,"stop_reason":"end_turn","session_id":"8f715a95-0706-4cf7-bf15-7b2562933c9b","total_cost_usd":0.5165639999999999,"usage":{"input_tokens":865,"cache_creation_input_tokens":85770,"cache_read_input_tokens":396394,"output_tokens":3626,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":85770},"inference_geo":"","iterations":[{"input_tokens":1,"output_tokens":610,"cache_read_input_tokens":44771,"cache_creation_input_tokens":230,"cache_creation":{"ephemeral_5m_input_tokens":230,"ephemeral_1h_input_tokens":0},"type":"message"}],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":866,"outputTokens":3817,"cacheReadInputTokens":441395,"cacheCreationInputTokens":86478,"webSearchRequests":0,"costUSD":0.5165639999999999,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"7dfc89e1-3876-42b2-9394-8333b819b969","errors":["Reached maximum budget ($0.5)"]}
+2026-04-30T17:41:46Z HEIMDALL [pulse] EXIT
+2026-04-30T17:50:02Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$0.50
+2026-04-30T17:54:11Z HEIMDALL [pulse] ERROR — claude exited 1
+{"type":"result","subtype":"error_max_budget_usd","duration_ms":237048,"duration_api_ms":152755,"is_error":true,"num_turns":15,"stop_reason":"tool_use","session_id":"fa3f867a-d5d6-40c4-b580-40f05fd870e5","total_cost_usd":0.5116723500000001,"usage":{"input_tokens":17,"cache_creation_input_tokens":33308,"cache_read_input_tokens":548122,"output_tokens":9298,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":33308},"inference_geo":"","iterations":[{"input_tokens":1,"output_tokens":4223,"cache_read_input_tokens":48827,"cache_creation_input_tokens":1458,"cache_creation":{"ephemeral_5m_input_tokens":1458,"ephemeral_1h_input_tokens":0},"type":"message"}],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":18,"outputTokens":12627,"cacheReadInputTokens":598407,"cacheCreationInputTokens":38051,"webSearchRequests":0,"costUSD":0.5116723500000001,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"57abf14d-a52b-4496-96fa-501bd7e0030b","errors":["Reached maximum budget ($0.5)"]}
+2026-04-30T17:54:11Z HEIMDALL [pulse] EXIT
+2026-04-30T18:00:03Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$0.50
+2026-04-30T18:02:50Z HEIMDALL [pulse] ERROR — claude exited 1
+{"type":"result","subtype":"error_max_turns","duration_ms":155097,"duration_api_ms":138006,"is_error":true,"num_turns":16,"stop_reason":"tool_use","session_id":"1e68d256-73c4-4852-a1ee-1ba017fe382c","total_cost_usd":0.48854115000000004,"usage":{"input_tokens":333,"cache_creation_input_tokens":51468,"cache_read_input_tokens":571264,"output_tokens":5893,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":51468},"inference_geo":"","iterations":[{"input_tokens":1,"output_tokens":177,"cache_read_input_tokens":51057,"cache_creation_input_tokens":1124,"cache_creation":{"ephemeral_5m_input_tokens":1124,"ephemeral_1h_input_tokens":0},"type":"message"}],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":334,"outputTokens":7101,"cacheReadInputTokens":617818,"cacheCreationInputTokens":52181,"webSearchRequests":0,"costUSD":0.48854115000000004,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"terminal_reason":"max_turns","fast_mode_state":"off","uuid":"128a4946-f8d3-42ec-a35b-d0b1c1fe3ef1","errors":["Reached maximum number of turns (15)"]}
+2026-04-30T18:02:50Z HEIMDALL [pulse] EXIT
+2026-04-30T18:10:02Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$0.50
+2026-04-30T18:12:15Z HEIMDALL [pulse] ERROR — claude exited 1
+{"type":"result","subtype":"error_max_turns","duration_ms":124809,"duration_api_ms":99741,"is_error":true,"num_turns":16,"stop_reason":"tool_use","session_id":"9b53e3e1-0649-4581-be12-db5094054113","total_cost_usd":0.46444349999999995,"usage":{"input_tokens":17,"cache_creation_input_tokens":53228,"cache_read_input_tokens":621825,"output_tokens":5216,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":53228},"inference_geo":"","iterations":[{"input_tokens":1,"output_tokens":802,"cache_read_input_tokens":51916,"cache_creation_input_tokens":1312,"cache_creation":{"ephemeral_5m_input_tokens":1312,"ephemeral_1h_input_tokens":0},"type":"message"}],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":17,"outputTokens":5216,"cacheReadInputTokens":621825,"cacheCreationInputTokens":53228,"webSearchRequests":0,"costUSD":0.46444349999999995,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"terminal_reason":"max_turns","fast_mode_state":"off","uuid":"0891464f-0c03-474d-b6c7-9c1f7087f728","errors":["Reached maximum number of turns (15)"]}
+2026-04-30T18:12:15Z HEIMDALL [pulse] EXIT
+2026-04-30T18:20:01Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$0.50
+2026-04-30T18:23:19Z HEIMDALL [pulse] ERROR — claude exited 1
+{"type":"result","subtype":"error_max_budget_usd","duration_ms":189173,"duration_api_ms":171364,"is_error":true,"num_turns":16,"stop_reason":"tool_use","session_id":"61e71378-8fac-4aac-9733-fcd6a339545b","total_cost_usd":0.50648475,"usage":{"input_tokens":15,"cache_creation_input_tokens":47347,"cache_read_input_tokens":473266,"output_tokens":9997,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":47347},"inference_geo":"","iterations":[{"input_tokens":1,"output_tokens":5117,"cache_read_input_tokens":45037,"cache_creation_input_tokens":1932,"cache_creation":{"ephemeral_5m_input_tokens":1932,"ephemeral_1h_input_tokens":0},"type":"message"}],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":16,"outputTokens":10215,"cacheReadInputTokens":520235,"cacheCreationInputTokens":52571,"webSearchRequests":0,"costUSD":0.50648475,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"5ba59e85-9a60-471e-8f29-e36a55a0ca66","errors":["Reached maximum budget ($0.5)"]}
+SessionEnd hook [${CLAUDE_PLUGIN_ROOT}/hooks/session-end.sh] failed: Hook cancelled
+2026-04-30T18:23:19Z HEIMDALL [pulse] EXIT
+2026-04-30T18:30:03Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$0.50
+2026-04-30T18:33:43Z HEIMDALL [pulse] ERROR — claude exited 1
+{"type":"result","subtype":"error_max_budget_usd","duration_ms":204949,"duration_api_ms":67635,"is_error":true,"num_turns":17,"stop_reason":"tool_use","session_id":"f5d0b47a-e1e7-4e0c-84c4-9db4811143f7","total_cost_usd":0.51042105,"usage":{"input_tokens":15,"cache_creation_input_tokens":45633,"cache_read_input_tokens":475123,"output_tokens":4305,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":45633},"inference_geo":"","iterations":[{"input_tokens":1,"output_tokens":392,"cache_read_input_tokens":45093,"cache_creation_input_tokens":540,"cache_creation":{"ephemeral_5m_input_tokens":540,"ephemeral_1h_input_tokens":0},"type":"message"}],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":16,"outputTokens":11437,"cacheReadInputTokens":520756,"cacheCreationInputTokens":48691,"webSearchRequests":0,"costUSD":0.51042105,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"fast_mode_state":"off","uuid":"88de4237-8856-4779-813d-e77f25187c84","errors":["Reached maximum budget ($0.5)"]}
+SessionEnd hook [${CLAUDE_PLUGIN_ROOT}/hooks/session-end.sh] failed: Hook cancelled
+2026-04-30T18:33:43Z HEIMDALL [pulse] EXIT
+2026-04-30T18:40:02Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$0.50
+2026-04-30T18:41:50Z HEIMDALL [pulse] ERROR — claude exited 1
+{"type":"result","subtype":"error_max_turns","duration_ms":96140,"duration_api_ms":70989,"is_error":true,"num_turns":16,"stop_reason":"tool_use","session_id":"7cefac2a-59e0-4014-9e0c-5cc14d21d83f","total_cost_usd":0.39157980000000003,"usage":{"input_tokens":50,"cache_creation_input_tokens":44948,"cache_read_input_tokens":546216,"output_tokens":3934,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":44948},"inference_geo":"","iterations":[{"input_tokens":1,"output_tokens":202,"cache_read_input_tokens":43179,"cache_creation_input_tokens":665,"cache_creation":{"ephemeral_5m_input_tokens":665,"ephemeral_1h_input_tokens":0},"type":"message"}],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":50,"outputTokens":3934,"cacheReadInputTokens":546216,"cacheCreationInputTokens":44948,"webSearchRequests":0,"costUSD":0.39157980000000003,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"terminal_reason":"max_turns","fast_mode_state":"off","uuid":"be02a034-bf2c-4576-bd21-48e2a8c19518","errors":["Reached maximum number of turns (15)"]}
+2026-04-30T18:41:50Z HEIMDALL [pulse] EXIT
+2026-04-30T18:50:02Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$2.00
+2026-04-30T18:55:04Z HEIMDALL [pulse] ERROR — claude exited 124
+SessionEnd hook [${CLAUDE_PLUGIN_ROOT}/hooks/session-end.sh] failed: Hook cancelled
+2026-04-30T18:55:05Z HEIMDALL [pulse] EXIT
+2026-04-30T19:00:02Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$2.00
+2026-04-30T19:05:05Z HEIMDALL [pulse] ERROR — claude exited 124
+SessionEnd hook [${CLAUDE_PLUGIN_ROOT}/hooks/session-end.sh] failed: Hook cancelled
+2026-04-30T19:05:05Z HEIMDALL [pulse] EXIT
+2026-04-30T19:10:02Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$2.00
+2026-04-30T19:15:04Z HEIMDALL [pulse] ERROR — claude exited 124
+SessionEnd hook [${CLAUDE_PLUGIN_ROOT}/hooks/session-end.sh] failed: Hook cancelled
+2026-04-30T19:15:04Z HEIMDALL [pulse] EXIT
+2026-04-30T19:20:02Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$2.00
+2026-04-30T19:25:04Z HEIMDALL [pulse] ERROR — claude exited 124
+SessionEnd hook [${CLAUDE_PLUGIN_ROOT}/hooks/session-end.sh] failed: Hook cancelled
+2026-04-30T19:25:04Z HEIMDALL [pulse] EXIT
+2026-04-30T19:30:02Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$2.00
+2026-04-30T19:35:05Z HEIMDALL [pulse] ERROR — claude exited 124
+SessionEnd hook [${CLAUDE_PLUGIN_ROOT}/hooks/session-end.sh] failed: Hook cancelled
+2026-04-30T19:35:05Z HEIMDALL [pulse] EXIT
+2026-04-30T19:40:02Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$2.00
+2026-04-30T19:45:05Z HEIMDALL [pulse] ERROR — claude exited 124
+SessionEnd hook [${CLAUDE_PLUGIN_ROOT}/hooks/session-end.sh] failed: Hook cancelled
+2026-04-30T19:45:05Z HEIMDALL [pulse] EXIT
+2026-04-30T19:50:02Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$2.00
+2026-04-30T19:55:05Z HEIMDALL [pulse] ERROR — claude exited 124
+SessionEnd hook [${CLAUDE_PLUGIN_ROOT}/hooks/session-end.sh] failed: Hook cancelled
+2026-04-30T19:55:05Z HEIMDALL [pulse] EXIT
+2026-04-30T20:00:02Z HEIMDALL [behavioral] SKIPPED — already running (PID 3047791)
+2026-04-30T20:00:03Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$2.00
+2026-04-30T20:05:05Z HEIMDALL [pulse] ERROR — claude exited 124
+SessionEnd hook [${CLAUDE_PLUGIN_ROOT}/hooks/session-end.sh] failed: Hook cancelled
+2026-04-30T20:05:05Z HEIMDALL [pulse] EXIT
+2026-04-30T20:10:02Z HEIMDALL [pulse] SKIPPED — already running (PID 3052214)
+2026-04-30T20:10:03Z HEIMDALL [verify] START — mode=verify model=claude-sonnet-4-6 timeout=1200s budget=$3.00
+2026-04-30T20:12:13Z HEIMDALL [research] SKIPPED — already running (PID 3052214)
+2026-04-30T20:23:59Z HEIMDALL [pulse] SKIPPED — already running (PID 3052214)
+2026-04-30T20:30:01Z HEIMDALL [pulse] SKIPPED — already running (PID 3052214)
+2026-04-30T20:30:06Z HEIMDALL [verify] ERROR — claude exited 124
+SessionEnd hook [${CLAUDE_PLUGIN_ROOT}/hooks/session-end.sh] failed: Hook cancelled
+2026-04-30T20:30:06Z HEIMDALL [verify] EXIT
+2026-04-30T20:40:02Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=300s budget=$2.00
+2026-04-30T20:45:05Z HEIMDALL [pulse] ERROR — claude exited 124
+SessionEnd hook [${CLAUDE_PLUGIN_ROOT}/hooks/session-end.sh] failed: Hook cancelled
+2026-04-30T20:45:05Z HEIMDALL [pulse] EXIT
+2026-04-30T21:30:03Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=600s budget=$2.00
+2026-04-30T21:37:17Z HEIMDALL [pulse] DONE — elapsed=434s cost=$0
+2026-04-30T21:37:17Z HEIMDALL [pulse] COMMIT — no changes to collect-hq this cycle
