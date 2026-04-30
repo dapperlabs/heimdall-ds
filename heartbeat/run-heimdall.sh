@@ -80,8 +80,8 @@ check_budget
 case "$MODE" in
     pulse)
         TIMEOUT=300
-        MAX_TURNS=15
-        BUDGET_USD=0.50
+        MAX_TURNS=25
+        BUDGET_USD=2.00
         MODEL="claude-sonnet-4-6"
         ;;
     research)
