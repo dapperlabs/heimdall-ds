@@ -104,3 +104,13 @@ SessionEnd hook [${CLAUDE_PLUGIN_ROOT}/hooks/session-end.sh] failed: Hook cancel
 2026-04-30T22:00:04Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=600s budget=$2.00
 2026-04-30T22:02:46Z HEIMDALL [pulse] DONE — elapsed=162s cost=$0
 2026-04-30T22:02:46Z HEIMDALL [pulse] COMMIT — no changes to collect-hq this cycle
+2026-04-30T22:02:47Z HEIMDALL [pulse] COMMIT — memory-cabinet updated
+2026-04-30T22:02:47Z HEIMDALL [pulse] COMPLETE
+2026-04-30T22:02:47Z HEIMDALL [pulse] EXIT
+2026-04-30T22:30:04Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=600s budget=$2.00
+2026-04-30T22:34:10Z HEIMDALL [pulse] ERROR — claude exited 1
+{"type":"result","subtype":"error_max_turns","duration_ms":232843,"duration_api_ms":202143,"is_error":true,"num_turns":26,"stop_reason":"tool_use","session_id":"b67d1cbf-aad7-4a93-9ee7-82fb4a66ea32","total_cost_usd":0.7293348000000001,"usage":{"input_tokens":27,"cache_creation_input_tokens":55660,"cache_read_input_tokens":1076446,"output_tokens":13173,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":55660},"inference_geo":"","iterations":[{"input_tokens":1,"output_tokens":711,"cache_read_input_tokens":54917,"cache_creation_input_tokens":743,"cache_creation":{"ephemeral_5m_input_tokens":743,"ephemeral_1h_input_tokens":0},"type":"message"}],"speed":"standard"},"modelUsage":{"claude-sonnet-4-6":{"inputTokens":27,"outputTokens":13173,"cacheReadInputTokens":1076446,"cacheCreationInputTokens":55660,"webSearchRequests":0,"costUSD":0.7293348000000001,"contextWindow":200000,"maxOutputTokens":32000}},"permission_denials":[],"terminal_reason":"max_turns","fast_mode_state":"off","uuid":"e50b695a-daa1-43e8-bd87-ceb40bd93485","errors":["Reached maximum number of turns (25)"]}
+2026-04-30T22:34:10Z HEIMDALL [pulse] EXIT
+2026-04-30T23:00:03Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=600s budget=$2.00
+2026-04-30T23:02:58Z HEIMDALL [pulse] DONE — elapsed=174s cost=$0
+2026-04-30T23:02:58Z HEIMDALL [pulse] COMMIT — no changes to collect-hq this cycle
