@@ -114,3 +114,10 @@ SessionEnd hook [${CLAUDE_PLUGIN_ROOT}/hooks/session-end.sh] failed: Hook cancel
 2026-04-30T23:00:03Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=600s budget=$2.00
 2026-04-30T23:02:58Z HEIMDALL [pulse] DONE — elapsed=174s cost=$0
 2026-04-30T23:02:58Z HEIMDALL [pulse] COMMIT — no changes to collect-hq this cycle
+2026-04-30T23:03:00Z HEIMDALL [pulse] COMMIT — memory-cabinet updated
+2026-04-30T23:03:00Z HEIMDALL [pulse] COMPLETE
+2026-04-30T23:03:00Z HEIMDALL [pulse] EXIT
+2026-04-30T23:30:05Z HEIMDALL [pulse] START — mode=pulse model=claude-sonnet-4-6 timeout=600s budget=$2.00
+2026-04-30T23:53:41Z HEIMDALL [pulse] ERROR — claude exited 124
+
+2026-04-30T23:53:53Z HEIMDALL [pulse] EXIT
